@@ -1,0 +1,96 @@
+.slider-bottom {
+	height: 345px;
+	background: url(../img/slider-bot-f.jpg) center center;
+	background-size: cover;
+	// width: 100vw;
+	&__wrap {
+		// height: 345px;
+		.clearfix;
+	}
+	&__slide {
+		// height: 345px;
+		position: relative;
+		text-align: center;
+		height: 185px;
+
+		
+		&-img {
+			padding: 0 7px;
+			display: flex;
+			height: 185px;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__title {
+		font-family: 'GothamPro-Bold';
+		font-size: 48px;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.slick-list {
+		width: 1140px;
+		margin: 0 auto;
+	}
+	.slick-dots {
+		// margin-top: -48px;
+		z-index: 10;
+		position: relative;
+		li {
+			margin: 0;
+		}
+	}
+	.slick-arrow {
+		top: 67px;
+	}
+	.slick-next {
+		
+		&:after {
+			color: black;
+			transition: all 0.2s;
+		}
+		&:hover:after {
+			color: lighten(black, 30%); 
+		}
+	}
+	.slick-prev {
+
+		&:after {
+			color: black;
+			transition: all 0.2s;
+		}
+		&:hover:after {
+			color: lighten(black, 30%); 
+		}
+	}
+}
+@media (max-width: 1250px) {
+	.slider-bottom {
+		.slick-list {
+			width: 900px;
+		}
+	}
+}
+@media (max-width: 1050px) {
+	.slider-bottom {
+		.slick-list {
+			width: 700px;
+		}
+	}
+}
+@media (max-width: 700px) {
+	.slider-bottom {
+		.slick-list {
+			width: 414px;
+		}
+	}
+}
+@media (max-width: 610px) {
+	.slider-bottom {
+		&__title {
+			font-size: 32px;
+		}
+	}
+}
