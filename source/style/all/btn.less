@@ -1,0 +1,36 @@
+.btn {
+	display: inline-block;
+	border-radius: 6px;
+	font-family: 'GothamPro-Medium';
+	font-size: 24px;
+	text-align: center;
+	padding: 19px;
+	margin: 0 @sp*2 @sp/3 0;
+	min-width: 290px;
+	
+	&_green {
+		background-color: @green;
+		color: @gray; 
+		
+		&:hover {
+			background-color: darken(@green, 10%);
+			color: darken(@gray, 10%);
+		}
+	}
+	
+	&_gray {
+		background-color: @gray;
+		color: @green; 
+		
+
+		&:hover {
+			background-color: darken(@gray, 10%);
+			color: darken(@green, 10%);
+		}
+	}
+
+
+
+}
+
+
