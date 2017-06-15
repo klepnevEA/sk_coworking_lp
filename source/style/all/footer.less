@@ -1,3 +1,98 @@
 .footer {
+	//height: 415px;
+	background-color: @dark;
+	&__content {
+		color: white;
+		padding: 55px 0 35px;
+		&-one {
+			margin-bottom: 50px;
+			.clearfix;
+		}
+		&-two {
+			.clearfix;
+		}
+		&-three {
+			font-family: 'GothamPro';
+			text-align: center;
+			margin-top: 30px;
+			span {
+				color: #97979b;
+				font-size: 12px;
+			}
+			a {
+				color: #97979b;
+				font-size: 12px;
+				transition: all 0.2s;
+				&:hover {
+					color: white;
+				}
+			}
+			.clearfix;
+		}
+		&-title {
+			color: white;
+			font-size: 13px;
+			font-family: 'GothamPro';
+			text-transform: uppercase;
+			margin-bottom: 25px;
+		}
+		ul {
 
+		}
+		li {
+			color: #97979b;
+			font-size: 12px;
+			font-family: 'GothamPro';
+			margin-bottom: 10px;
+			a {
+				color: #97979b;
+				transition: all 0.2s;
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+	&__center-block {
+		text-align: center;
+		&-top {
+			margin-top: 35px;
+			a {
+
+			}
+		}
+		a {
+			color: #97979b;
+			font-size: 12px;
+			font-family: 'GothamPro';
+			margin-bottom: 10px;
+			padding: 0 10px;
+
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	&__soc-block {
+		&-link {
+			width: 30px;
+			height: 30px;
+			background: #a0a0a0;
+			color: white;
+			text-align: center;
+			line-height: 30px;
+			border-radius: 50%;
+			display: block;
+			float: right;
+			margin-left: 12px;
+			rtansition: all 0.2s;
+			&:last-child {
+				margin-left: 0;
+				
+			}
+			&:hover {
+				background: @green;
+			}
+		}
+	}
 }
