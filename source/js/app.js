@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 	/*кнопка верхнего меню*/
 
-	$('.dropdown-menu__link').on('touchend mouseup', function() {
+	$('.dropdown-menu__link').on('click', function() {
 
 		$('.header').toggleClass('open-menu');
 	})
