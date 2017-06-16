@@ -1,6 +1,23 @@
 'use strict';
 
 $(document).ready(function() {
+
+	//Сендвич
+	$(".sandwich__select").click(function(){
+		$(this).toggleClass('active');
+		$('.sandwich__list').toggleClass('active');
+
+		$(".sandwich__item").click(function(){
+			$(".sandwich__item").removeClass('select');
+			$(this).toggleClass('select');
+			var $itemText = $(this).text();
+			$('.sandwich__select span').text($itemText);
+		});
+
+	});
+
+
+
 	//слайдер верний
 	$(".slider-main__wrap").slick({
 		dots: false,
@@ -36,9 +53,8 @@ $(document).ready(function() {
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}
-			},
+			}
 			
 		]
 	});
-	
 });

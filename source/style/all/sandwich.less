@@ -1,0 +1,76 @@
+.sandwich {
+	width: 100%;
+	position: relative;
+	
+	&__select{
+		border-radius: 6px;
+		background-color: #f6f6f6;
+		padding: @sp 40px @sp 20px;
+		position: relative;
+		cursor: pointer;
+		transition: all 0.2s;
+		position: relative;
+		z-index: 20;
+		.clearfix;
+		&.active {
+			box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.24);
+			.sandwich__select-btn {
+				transform: rotate(180deg);
+				top: calc(~'50% - 14px');
+			}
+		}
+		&:hover {
+			background: darken(#f6f6f6, 2%);
+		}
+		span {
+
+			
+			font-family: "GothamPro";
+			font-size: 17px;
+		}
+		&-btn {
+			position: absolute;
+			top: calc(~'50% - 12px');
+			right: @sp;
+			z-index: 10;
+			cursor: pointer;
+			font-size: 22px;
+			transition: all 0.2s;
+		}
+	}
+	&__list {
+		opacity: 0;
+		position: absolute;
+		transition: all 0.3s;
+		background: #f6f6f6;
+		width: 100%;
+		border-radius: 6px;
+		padding: @sp 20px;
+		z-index: 0;
+
+		&.active {
+			opacity: 1;
+			background: lighten(#f6f6f6, 2%);
+			z-index: 10;
+
+
+
+		}
+	}
+	&__item {
+		font-family: "GothamPro";
+		font-size: 17px;
+		margin-top: 10px;
+		cursor: pointer;
+		transition: all 0.2s;
+		&.select {
+			color: @green;
+			&:hover {
+				color: @green;
+			}
+		}
+		&:hover {
+			color: lighten(black, 50%);
+		}
+	}
+}
