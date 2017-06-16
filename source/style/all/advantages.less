@@ -1,0 +1,72 @@
+.advantages {
+	background: url(../img/green-f.jpg) no-repeat center;
+	background-size: cover;
+	padding: 50px 0;
+	.clearfix;
+	.title {
+		letter-spacing: -1px;
+		margin-bottom: 60px;
+		.clearfix;
+	}
+	&__item {
+		height: 240px;
+		&-img {
+			background: url(../img/svg/white-figure.svg) no-repeat center;
+			width: 125px;
+			height: 125px;
+			background-size:  auto 100%;
+			margin: 0 auto @sp;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		&-text {
+			color: black;
+			font-family: 'GothamPro-Medium';
+			font-size: 24px;
+			text-align: center;
+		}
+	}
+	&__btns {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.btn {
+			margin: 0 30px;
+			color: white;
+			text-shadow: 1px 1px 0 rgba(2, 2, 2, 0.45);
+			padding: 19px 25px
+		}
+		&-or {
+			color: #000000;
+			font-family: 'GothamPro-Medium';
+			font-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 665px) {
+	.advantages {
+		&__btns {
+			flex-direction:column;
+			.btn {
+				width: 100%;
+				margin: @sp 0;
+			}
+		}
+		
+	}
+}
+
+@media (max-width: 600px) {
+	.advantages {
+		&__list {
+			.col-xs-6 {
+				width: 100%;
+				float: none;
+			}
+		}
+		
+	}
+}
