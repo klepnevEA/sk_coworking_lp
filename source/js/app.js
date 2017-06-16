@@ -70,4 +70,12 @@ $(document).ready(function() {
 			
 		]
 	});
+
+
+	/*кнопка верхнего меню*/
+
+	$('.dropdown-menu__link').on('touchend mouseup', function() {
+
+		$('.header').toggleClass('open-menu');
+	})
 });

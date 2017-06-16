@@ -43,5 +43,61 @@
 		}
 	}
 
+
+
 }
 
+@media (max-width: 1175px) {
+	.header {
+		&__nav {
+			position: fixed;
+			background-color: #FFF;
+			min-height: 100%;
+			top: 0px;
+			right: -100%;
+			padding: @sp;
+			padding-top: 80px;
+			transition: .5s;
+			z-index:9000;
+			
+			//top: -80px;
+		}
+
+		&__list {
+			flex-direction: column;
+			height: 100%;
+			z-index:9000;
+		}
+
+		&__link {
+			padding-left: 10px;
+			height: auto;
+			line-height: 2;
+			border-bottom: 0px solid transparent;
+			border-left: 3px solid transparent;
+			
+			&:hover {
+				border-bottom: 0px solid #000;
+				border-left: 3px solid #000;
+			}
+
+			&.active {
+				border-bottom: 0px solid #000;
+				border-left: 3px solid #000;
+			}
+		}
+	}
+
+	.open-menu {
+
+		.header {
+			&__nav {
+				right: 0;
+			}
+
+		}	
+
+		
+	}
+
+}
