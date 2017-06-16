@@ -1,8 +1,12 @@
 .dropdown-menu {
+	position: relative;
+	z-index: 9900;
 	&__link {
 		display: flex;
 		height: 100%;
+		width: 100px;
 		color: #000;
+		position: relative;
 		& i {
 			display: flex;
 			align-items: center;
@@ -10,5 +14,71 @@
 			font-size: 40px;
 			
 		}
+
+		&__close-btn {
+			position: absolute;
+			z-index: 9000;
+			top: 39px;
+			left: 40px;
+			background-color: #000;
+			width: @sp*2;
+			height: 3px;
+			transition: .3s;
+			
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				background-color: #000;
+				width: @sp*2;
+				height: 3px;
+				left: 0;
+				top: -9px;
+				transition: .3s;
+			}
+
+			&:after {
+				top: 9px;
+			}
+		}
 	}
+
+
+}
+
+@media (max-width: 1175px) {
+
+	.open-menu {
+
+		.dropdown-menu {
+			
+			&__link {
+				position: fixed;
+				top: 0;
+				right: 0;
+				
+				&__close-btn {
+					width: 0;
+					
+					&:before {
+						transform: rotate(45deg);
+						top: 0;
+					}
+
+					&:after {
+						transform: rotate(-45deg);
+						top: 0;
+					}
+				}
+			}
+
+
+		}
+
+
+		
+	}
+	
+
+
 }

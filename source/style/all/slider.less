@@ -167,7 +167,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-	z-index: 9900;
+	z-index: 100;
 	background-color: transparent;
 	color: transparent;
 	border: 0;
@@ -197,3 +197,11 @@
 			content: '\f142';
 		}
 }
+
+@media (max-width: 840px) {
+	.slick-prev,
+	.slick-next	{
+		display: none !important;
+	}
+
+} 
