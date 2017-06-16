@@ -12,6 +12,19 @@ $(document).ready(function() {
 			$(this).toggleClass('select');
 			var $itemText = $(this).text();
 			$('.sandwich__select span').text($itemText);
+			$('.sandwich__list').removeClass('active');
+			$('.sandwich__select').removeClass('active');
+			$('.your-coworking__item-wrap').removeClass('active');
+
+			if(this.id === 'forId-0') {
+				$('#id-0').addClass('active');
+			} else if(this.id === 'forId-1') {
+				$('#id-1').addClass('active');
+			} else if(this.id === 'forId-2') {
+				$('#id-2').addClass('active');
+			} else if(this.id === 'forId-3') {
+				$('#id-3').addClass('active');
+			} 
 		});
 
 	});

@@ -1,7 +1,8 @@
 .your-coworking {
 	background: white;
-	height: 1020px; 
 	padding-top: 45px;
+	padding-bottom: 45px;
+	.clearfix;
 	.sandwich {
 		margin-top: 45px;
 	}
@@ -9,17 +10,75 @@
 		width: 100%;
 		background: #f7f7f7;
 		height: 465px;
+		margin-bottom: @sp;
 		&-wrap {
 			margin-top: 45px;
+			display: none;
+			&.active {
+				display: block;
+			}
 		}
 		&-header {
 			height: 105px;
-			background: red;
+			background: url(../img/yk-f.jpg) no-repeat;
+			background-size: cover;
+			background-position: 0 0;
 			color: black;
 			font-family: 'GothamPro-Bold';
 			font-size: 26px;
-			padding: 30px 35px;
+			padding: 23px 30px;
+		}
+		&-list {
+			padding: 30px 20px 0 30px;
+			height: 230px;
+			overflow: hidden;
+		}
+		&-listitem {
+			color: #000000;
+			font-family: "GothamPro";
+			font-size: 18px;
+			margin-bottom: 38px;
+			
+		}
+		&-footer {
+			padding: 23px 30px;
+			&-price {
+				font-family: 'GothamPro-Bold';
+				font-size: 44px;
+				line-height: 44px;
+				height: 44px;
+				color: black;
+			}
+			&-rub {
+				font-family: 'GothamPro-Bold';
+				font-size: 34px;
+				color: black;
+				line-height: 34px;
+				height: 34px;
+			}
 		}
 	}
-
+	.col-lg-3 {
+		&:nth-child(2) {
+			.your-coworking__item {
+				.your-coworking__item-header {
+					background-position: -300px 0;
+				}
+			}
+		}
+		&:nth-child(3) {
+			.your-coworking__item {
+				.your-coworking__item-header {
+					background-position: -600px 0;
+				}
+			}
+		}
+		&:nth-child(4) {
+			.your-coworking__item {
+				.your-coworking__item-header {
+					background-position: -900px 0;
+				}
+			}
+		}
+	}
 }
