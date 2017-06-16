@@ -1,5 +1,5 @@
 .innovation-center {
-	height: 885px;
+	min-height: 885px;
 	padding-top: @sp*3;
 	background-color: #fff;
 	background-image: url(../img/innovation-center.png);
@@ -38,3 +38,12 @@
 	}
 }
 
+
+@media (max-width: 520px) {
+	.innovation-center {
+		.col-xs-6 {
+		    padding-left: 10px;
+		    padding-right: 10px;			
+		}
+	}
+}
