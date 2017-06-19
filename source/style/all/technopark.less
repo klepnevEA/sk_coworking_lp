@@ -1,6 +1,5 @@
 .technopark {
-	min-height: 790px;
-	padding-top: 50px;
+	padding: 45px 0 50px;
 	background-color: @dark;
 	background-image: url(../img/technopark.png);
 	background-position: center center;
@@ -25,14 +24,18 @@
 		color: @green;
 		text-align: center;
 		margin-bottom: @sp/5;
+		text-shadow: 0px 1px 0px rgba(2, 2, 2, 0.004);
 	}
 
 	&__text {
+		padding: 0 10px; 
 		font-family: 'GothamPro-Medium';
 		text-align: center;
 		font-size: 24px;
 		line-height: 1.2;
 		color: #fff;
+		text-shadow: 0px 1px 0px rgba(2, 2, 2, 0.004);
+		
 		
 		&_margin-botoom {
 			margin-bottom: 90px;
@@ -48,3 +51,22 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.technopark {
+		.title {
+			margin-bottom: @sp*4;
+		}
+
+		&__text {
+			margin-bottom: @sp*2;
+		}
+
+		& .col-xs-12 {
+			&:last-child {
+				.technopark__tile {
+					margin-bottom: @sp*2;					
+				}
+			}	
+		}
+	}
+}
