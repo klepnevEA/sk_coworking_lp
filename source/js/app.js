@@ -71,9 +71,16 @@ $(document).ready(function() {
 
 
 	/*кнопка верхнего меню*/
+	$(window).resize(function(){
+		if($( window ).width() > 1024 ) {
+			$('.header').removeClass('open-menu');
+		}
+	});
+
 
 	$('.dropdown-menu__link').on('click', function() {
-
-		$('.header').toggleClass('open-menu');
+		if($( window ).width() <= 1024) {
+			$('.header').toggleClass('open-menu');
+		}
 	})
 });
