@@ -1,0 +1,81 @@
+.modal {
+
+	.btn {
+		padding: 10px;
+    	font-size: 20px;
+	}
+
+	&-header,
+	&-body,
+	&-footer
+	{
+		padding: 20px;
+	}
+
+	&-dialog {
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	&-content {
+		position: relative;
+		top: 50%;
+		transform: translate(0%, -50%);
+	}
+
+	&-title {
+		font-family: 'GothamPro-Bold';
+		font-size: 30px;
+		padding-right: 50px;
+		line-height: 1;
+	}
+
+	&__close {
+		float: right;
+		color: #000;
+		padding: 10px;
+		font-size: 30px;
+		
+		&:hover {
+			color: lighten(#000, 50%);
+		}
+	}
+
+	&__text {
+		font-family: 'GothamPro';
+		font-size: 16px;
+		margin-bottom: @sp;
+		
+		&_important {
+			color: red;
+		}
+
+		&_allotted {
+			padding: 20px;
+			background-color: lighten(@green, 20%);
+			font-family: 'GothamPro-Medium';
+			border-radius: @sp/3;
+		}
+	}
+
+	&__item {
+		font-family: 'GothamPro-Medium';
+		font-size: 20px;
+		margin-bottom: @sp/3;		
+	}
+
+	&__input {
+		font-family: 'GothamPro';
+		font-size: 16px;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid lighten(@gray, 50%);
+        border-radius: @sp/3;
+        transition: 0.3s;
+        outline: none;
+        
+        &:focus {
+        	border: 1px solid lighten(@gray, 20%);
+        }	
+	}
+}
