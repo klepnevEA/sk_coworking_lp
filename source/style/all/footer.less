@@ -21,6 +21,7 @@
 			font-family: 'GothamPro';
 			text-align: center;
 			margin-top: 30px;
+			.clearfix;
 			span {
 				color: #97979b;
 				font-size: 12px;
@@ -33,7 +34,14 @@
 					color: white;
 				}
 			}
-			.clearfix;
+			&-tell {
+				width: 160px;
+				text-align: left;
+				float: right;
+				span {
+					white-space: nowrap;
+				}
+			}
 		}
 		&-title {
 			color: white;
@@ -113,7 +121,7 @@
 				margin-top: 0;
 				a {
 					display: block;
-					text-align: left;
+					//text-align: left;
 					padding: 0;
 					margin-bottom: 8px;
 				}
@@ -121,7 +129,7 @@
 		}
 	}
 }
-@media (max-width: 765px) {
+@media (max-width: 768px) {
 	.footer {
 		&__content-one {
 			margin-bottom: 0;
@@ -164,5 +172,17 @@
 			}
 
 		}
+		&__content-three {
+			&-tell {
+				width: 100%;
+				text-align: center;
+				float: none;
+				margin-top: @sp;
+				span {
+					white-space: nowrap;
+				}
+			}
+		}
+		
 	}
 }
