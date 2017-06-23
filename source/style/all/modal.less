@@ -1,18 +1,33 @@
 .modal {
-
+	background: rgba(0, 0, 0, 0.8);
 	.btn {
 		padding: 10px;
     	font-size: 20px;
-    	min-width: 243px;
+    	min-width: auto;
+    	padding-left: @sp;
+    	padding-right: @sp;
+    	font-size: 18px;
 	}
 
 	&-header,
 	&-body,
 	&-footer
 	{
-		padding: 20px;
+		padding: 40px;
+		position: relative;
 	}
-
+	&-footer {
+		padding: 20px 40px; 
+	}
+	&__form {
+		margin-bottom: @sp*2;
+	}
+	
+	&__line {
+		display: flex;
+		align-items: center;
+		margin-bottom: @sp;
+	}
 	&-dialog {
 		height: 100vh;
 		margin: 0 auto;
@@ -32,10 +47,12 @@
 	}
 
 	&__close {
-		float: right;
-		color: #000;
-		padding: 10px;
-		font-size: 30px;
+		position: absolute;
+		color: black;
+		// padding: 10px;
+		font-size: 25px;
+		top: 5px;
+		right: 5px;
 		
 		&:hover {
 			color: lighten(#000, 50%);
@@ -53,30 +70,74 @@
 
 		&_allotted {
 			padding: 20px;
-			background-color: lighten(@green, 20%);
+			// background-color: lighten(@green, 20%);
+			background-color: @green;
 			font-family: 'GothamPro-Medium';
 			border-radius: @sp/3;
+			margin-bottom: 0;
 		}
 	}
 
 	&__item {
 		font-family: 'GothamPro-Medium';
-		font-size: 20px;
-		margin-bottom: @sp/3;		
+		font-size: 16px;
+		margin-bottom: @sp/3;
+		flex: 0 0 150px;
 	}
 
 	&__input {
 		font-family: 'GothamPro';
 		font-size: 16px;
 		padding: 10px;
-		margin-bottom: 20px;
 		border: 1px solid lighten(@gray, 50%);
-        border-radius: @sp/3;
+        border-radius: 3px;
         transition: 0.3s;
         outline: none;
+        width: 100%;
+
         
         &:focus {
         	border: 1px solid lighten(@gray, 20%);
         }	
+	}
+}
+@media (max-width: 655px) {
+	.modal {
+		.btn {
+			padding: 10px;
+	    	font-size: 20px;
+	    	min-width: auto;
+	    	
+	    	
+
+	    	display: inline-block;
+	    	border-radius: 6px;
+	    	font-family: 'GothamPro-Medium';
+	    	font-size: 24px;
+	    	text-align: center;
+	    	padding: 19px;
+	    	 
+		}
+	}
+}
+@media (max-width: 440px) {
+	.modal {
+		&__line {
+			display: flex;
+			align-items: stretch;
+			flex-direction: column;
+			margin-bottom: @sp;
+		}
+		&__item {
+			flex: 0;
+			text-align: left;
+		}
+		&-dialog {
+			height: auto;
+			margin: @sp;
+		}
+		&-content {
+			transform: translate(0, 0%);
+		}
 	}
 }

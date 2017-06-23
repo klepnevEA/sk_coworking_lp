@@ -9,12 +9,16 @@ section
         .modal-body
           .modal__text Продолжительность экскурсии: ~20 минут. Адрес: Инновационный центр «Сколково», Большой б-р, 42, корп.
           .modal__text.modal__text_important * Обязательно
-          .modal__item Имя и фамилия <span>*</span>
-          input(type="text", placeholder="Имя и фамилия").modal__input
-          .modal__item Телефон <span>*</span>
-          input(type="text", placeholder="Телефон").modal__input
-          .modal__item Электронная почта <span>*</span>
-          input(type="text", placeholder="Электронная почта").modal__input
+          .modal__form
+            .modal__line
+              .modal__item Имя и фамилия <span>*</span>
+              input(type="text", placeholder="Имя и фамилия").modal__input
+            .modal__line
+              .modal__item Телефон <span>*</span>
+              input(type="text", placeholder="Телефон").modal__input
+            .modal__line
+              .modal__item Электронная почта <span>*</span>
+              input(type="text", placeholder="Электронная почта").modal__input
           .modal__text.modal__text_allotted Мы свяжемся с вами и договоримся о дате и времени экскурсии.
         .modal-footer
           a.btn.btn_gray(data-dismiss='modal') Отправить
