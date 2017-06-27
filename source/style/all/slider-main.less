@@ -1,14 +1,13 @@
 .slider-main {
 	height: 670px;
-	
 	&__container {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		position: relative;
 		width: 100%;
-		padding: 50px 0 35px;
-		height: 100%;
+		padding: 50px 0 45px;
+		height: 670px;
 	}
 	.w90 {
 		height: 100%; 
@@ -17,13 +16,6 @@
 	&__elem {
 		position: relative;
 		height: 670px;
-		
-		// & .container {
-		// 	height: 100%;
-		// 	width: 90%;	
-		// }
-		
-		
 		&-bg {
 			position: absolute;
 			background-position: center center;
@@ -32,22 +24,17 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			// box-shadow: inset 0px 0px 300px -24px rgba(0,0,0,0.49);
-			
-			// &:after {
-			// 	content: '';
-			// 	position: absolute;
-			// 	width: 100%;
-			// 	height: 100%;
-			// 	background-color: rgba(0,0,0,.4);
-			// }
 		}
-	}
-	&_technopark {
-		.slider-main__container {
+		&_technopark {
+			.slider-main__container {
 				width: 100%;
+				height: 670px; 
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 	}
+
 
 	&__logo {
 		position: absolute;
