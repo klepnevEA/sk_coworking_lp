@@ -1,7 +1,10 @@
 .dropdown-menu {
+	display: none;
 	position: relative;
 	z-index: 9900;
+
 	&__link {
+		display: none;
 		display: flex;
 		height: 100%;
 		width: 100px;
@@ -47,16 +50,12 @@
 }
 
 @media (max-width: 1175px) {
-
 	.open-menu {
-
 		.dropdown-menu {
-			
 			&__link {
 				position: fixed;
 				top: 0;
 				right: 0;
-				
 				&__close-btn {
 					width: 0;
 					
@@ -78,7 +77,9 @@
 
 		
 	}
-	
-
-
+}
+@media (max-width: 1040px) {
+	.dropdown-menu {
+		display: block;
+	}
 }

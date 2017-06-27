@@ -21,6 +21,7 @@
 		height: 100%;
 		align-items: stretch;
 		//justify-content: space-around;
+		float: left;
 	}
 
 	&__elem {
@@ -28,6 +29,7 @@
 		align-items: center;
 		margin-right: 45px;
 		letter-spacing: -1px;
+
 	}
 
 	&__link {
@@ -38,6 +40,7 @@
 		line-height: 2.6;
 		vertical-align: middle;
 		border-bottom: 3px solid transparent;
+		white-space: nowrap;
 		
 		&:hover {
 			border-bottom: 3px solid #000;
@@ -47,31 +50,43 @@
 			border-bottom: 3px solid #000;
 		}
 	}
-
+	&__container-fluid {
+		width: calc(~"100% - 345px"); 
+	}
+	&__pull-right {
+		width: 195px;
+		overflow: hidden;
+		text-align: right;
+		border-right: 1px #eee solid;
+		padding: 18px 20px 0 0;
+		font-family: 'GothamPro-Bold', sans-serif;
+		font-size: 18px;
+	   
+	    &-tell {
+	    	font-family: 'GothamPro-Bold', sans-serif;
+	    	font-size: 18px;
+	    	color: black
+	    }
+	    &-email {
+	    	font-family: 'GothamPro-Bold', sans-serif;
+	    	font-size: 18px;
+	    	color: @green;
+	    }
+	}
 
 
 }
 
-@media (max-width: 1415px) {
-
+@media (max-width: 1515px) {
 	.header {
 		&__elem {
-			margin-right: 30px;
+			margin-right: 25px;
 		}
 	}
 } 
+ 
 
-@media (max-width: 1285px) {
-
-	.header {
-		&__elem {
-			margin-right: 20px;
-		}
-	}
-} 
-
-@media (max-width: 1190px) {
-
+@media (max-width: 1340px) {
 	.header {
 		&__elem {
 			margin-right: 15px;
@@ -81,11 +96,9 @@
 			font-size: 15px;
 		}
 	}
-}
+} 
 
-
-
-@media (max-width: 1126px) {
+@media (max-width: 1190px) {
 	.header {
 		&__elem {
 			margin-right: 13px;
@@ -94,10 +107,28 @@
 			font-size: 14px;
 		}
 	}
-} 
+}
 
-@media (max-width: 1024px) {
+
+
+
+@media (max-width: 1120px) {
 	.header {
+		&__elem {
+			margin-right: 13px;
+			letter-spacing: -1.5px;
+		}
+		&__link {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 1040px) {
+	.header {
+		&__container-fluid {
+			width: calc(~"100% - 445px");
+		}
 		&__nav {
 			position: fixed;
 			background-color: #FFF;
@@ -144,4 +175,13 @@
 		}	
 	}
 }
-
+@media (max-width: 445px) {
+	.header {
+		&__pull-right {
+			display: none;
+		}
+		&__container-fluid {
+			width: calc(~"100% - 250px");
+		}
+	}
+}

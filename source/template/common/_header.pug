@@ -1,30 +1,34 @@
 header.header
 	a(href="#").logo
 		img(src="img/logo.png", alt="logo")
-	.container
+	.header__container-fluid
 		.row
 			.col-xs-12
-				.row
-					nav.header__nav
-						ul.header__list
-							li.header__elem
-								a(href="#").header__link Технопарк
-							li.header__elem
-								a(href="#").header__link Новости
-							li.header__elem
-								a(href="#").header__link Резиденты
-							li.header__elem
-								a(href="#").header__link.active Коворкинг
-							li.header__elem
-								a(href="#").header__link Галерея событий
-							li.header__elem
-								a(href="#").header__link Календарь
-							li.header__elem
-								a(href="#").header__link Галерея
-							li.header__elem
-								a(href="#").header__link Отзывы
-							li.header__elem
-								a(href="#").header__link English version
+				nav.header__nav
+					ul.header__list
+						li.header__elem
+							a(href="#").header__link Технопарк
+						li.header__elem
+							a(href="#").header__link Новости
+						li.header__elem
+							a(href="#").header__link Резиденты
+						li.header__elem
+							a(href="#").header__link.active Коворкинг
+						li.header__elem
+							a(href="#").header__link Галерея событий
+						li.header__elem
+							a(href="#").header__link Календарь
+						li.header__elem
+							a(href="#").header__link Галерея
+						li.header__elem
+							a(href="#").header__link Отзывы
+						li.header__elem
+							a(href="#").header__link English version
+
+	.header__pull-right
+		a(href="tel:+7 495 82 55555").header__pull-right-tell +7 495 82 55555<br>
+		a(href="mailto:info@sk.ru").header__pull-right-email info@sk.ru
+
 	.dropdown-menu
 		a(href="#").dropdown-menu__link
 			.dropdown-menu__link__close-btn
