@@ -42,10 +42,13 @@
 
 @media (max-width: 767px) {
 	.innovation-center {
-		&__tile-small {
-			.col-xs-12 {
-				width: 50%;
-			}			
+		
+		& .container {
+			& .row:last-child {
+				.col-xs-12 {
+					width: 50%;
+				}	
+			}
 		}
 
 		&__tile {
@@ -58,10 +61,12 @@
 
 @media (max-width: 500px) {
 	.innovation-center {
-		&__tile-small {
-			.col-xs-12 {
-				width: 100%;
-			}			
+		& .container {
+			& .row:last-child {
+				.col-xs-12 {
+					width: 100%;
+				}	
+			}
 		}
 	}	
 }
