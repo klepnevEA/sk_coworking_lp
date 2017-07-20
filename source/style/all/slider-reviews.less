@@ -1,0 +1,149 @@
+.slider-reviews {
+	position: relative;
+	min-height: 600px;
+	// background: url(../img/slider-bot-f.jpg) center center;
+	background-size: cover;
+	// width: 100vw;
+	&__wrap {
+		// height: 345px;
+		.clearfix;
+	}
+
+	&__ancoranchor {
+		position: absolute;
+		top: -80px;
+	}
+	&__slide {
+		// height: 345px;
+		position: relative;
+		text-align: center;
+
+		
+		&-img {
+			padding: 2px 7px;
+			display: flex;
+			margin-bottom: 20px;
+			width: 100%;
+			
+			justify-content: center;
+			align-items: center;
+			
+			img {
+				width: 172px;
+				height: 187px;
+			}
+		}
+
+		&-text {
+			font-family: 'GothamPro';
+			font-size: 20px;
+			padding: 0 @sp;
+			line-height: 1.2;
+			letter-spacing: -1.8px;
+			p {
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				
+				&:first-child {
+					min-height: 100px;
+					margin-bottom: @sp/3;
+				}
+				&:last-child {
+					margin-bottom: 10px;
+				}
+			}
+			
+			strong {
+				display: inline-block;
+				font-family: 'GothamPro-Bold';
+				margin-bottom: 2px;
+			}
+		}
+	}
+	&__title {
+		font-family: 'GothamPro-Bold';
+		font-size: 48px;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: @sp*2;
+	}
+
+	.slick-list {
+		width: 1140px;
+		margin: 0 auto;
+	}
+	.slick-dots {
+		// margin-top: -48px;
+		z-index: 10;
+		position: relative;
+		margin-bottom: @sp;
+		li {
+			margin: 0;
+		}
+	}
+	.slick-arrow {
+		top: 67px;
+	}
+	.slick-next {
+		
+		&:after {
+			color: black;
+			transition: all 0.2s;
+		}
+		&:hover:after {
+			color: lighten(black, 30%); 
+		}
+	}
+	.slick-prev {
+
+		&:after {
+			color: black;
+			transition: all 0.2s;
+		}
+		&:hover:after {
+			color: lighten(black, 30%); 
+		}
+	}
+}
+@media (max-width: 1250px) {
+	.slider-reviews {
+		.slick-list {
+			width: 900px;
+		}
+	}
+}
+@media (max-width: 1050px) {
+	.slider-reviews {
+		.slick-list {
+			width: 700px;
+		}
+	}
+}
+@media (max-width: 700px) {
+	.slider-reviews {
+		.slick-list {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 610px) {
+	.slider-reviews {
+		&__title {
+			font-size: 40px;
+			line-height: 1;
+		}
+
+		&__slide {
+			&-text {
+				p {
+					&:first-child {
+						margin-bottom: @sp;
+					}
+				}
+			}			
+		}
+
+
+	}
+}

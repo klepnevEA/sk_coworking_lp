@@ -1,0 +1,54 @@
+.coworking-sections {
+	padding: @sp*2 0 50px;
+	background-color: #fff;
+	
+	& .title {
+		font-size: 38px;
+		margin-bottom: 25px;
+	}
+
+	&__tile {
+		display: flex;
+		align-items: center;
+		border-radius: 6px;
+		background-color: @gray-bg;
+		height: 140px;
+		margin-bottom: @sp*2;
+		padding: 0 @sp*2;
+		color: #000;
+		transition: .3s;
+		
+		&:hover {
+			background-color: darken(@gray-bg, 5%);
+		}
+		
+
+		&.active {
+			background-color: @green;
+			
+			
+			&:hover {
+				background-color: darken(@green, 5%);
+			}
+		}
+	}
+
+	&__img {
+		display: flex;
+		flex: 0 0 110px;
+		justify-content: center;
+		margin-right: 25px;
+	}
+
+
+	&__text {
+		font-family: 'GothamPro-Bold';
+		text-align: left;
+		font-size: 20px;
+		line-height: 1.4;
+		flex: 0 1 auto;
+
+	}
+
+}
+

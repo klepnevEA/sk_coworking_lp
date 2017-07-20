@@ -1,0 +1,33 @@
+.search {
+	position: relative;
+	background-color: #f6f6f6;
+	
+	&__wrap {
+		position: relative;
+		padding: @sp*2 0;
+	}
+
+	&__input {
+		width: 100%;
+        border-radius: 6px;
+        border:0;
+        font-size: 18px;
+        font-family: 'GothamPro';
+        padding: 17px @sp*4 17px 20px;
+	}
+
+	&__magnifier {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translate(0, -50%);
+	}
+
+	&__link {
+		color: #b2b2b2;
+		font-size: 35px;
+		&:hover {
+			color: #000;
+		}
+	}
+}

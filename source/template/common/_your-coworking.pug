@@ -2,17 +2,24 @@ section
 	.container
 		.your-coworking 
 			h1.title Выберите свой Коворкинг
-			.sandwich 
-				.sandwich__select
-					span Для участников проекта создания и обеспечения функционирования ИЦ «Сколково» (без юридического адреса)
-					.sandwich__select-btn
-						i.mdi.mdi-chevron-down
+			//- .sandwich 
+			//- 	.sandwich__select
+			//- 		span Для участников проекта создания и обеспечения функционирования ИЦ «Сколково» (без юридического адреса)
+			//- 		.sandwich__select-btn
+			//- 			i.mdi.mdi-chevron-down
 
-				ul.sandwich__list 
-					li#forId-1.sandwich__item.select Участникам проекта создания и обеспечения функционирования ИЦ «Сколково» (без юридического адреса)
-					li#forId-2.sandwich__item Иным лицам
-					li#forId-3.sandwich__item Участникам и соискателям проекта «Сколково»
-				
+			//- 	ul.sandwich__list 
+			//- 		li#forId-1.sandwich__item.select Участникам проекта создания и обеспечения функционирования ИЦ «Сколково» (без юридического адреса)
+			//- 		li#forId-2.sandwich__item Иным лицам
+			//- 		li#forId-3.sandwich__item Участникам и соискателям проекта «Сколково»
+			.tabs
+				ul.tabs__list
+					li.tabs__elem
+						a.tabs__link.active(href="#", data-tab="#id-1" ) Для участников с полным пакетом услуг
+					li.tabs__elem
+						a.tabs__link(href="#", data-tab="#id-2" ) Для участников с частичным пакетом услуг
+					li.tabs__elem
+						a.tabs__link(href="#", data-tab="#id-3" ) Для 3-х лиц с полным пакетом услуг
 
 			#id-1.your-coworking__item-wrap.active
 				.row
@@ -66,95 +73,95 @@ section
 			#id-2.your-coworking__item-wrap
 				.row
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div
 								span От 3-х и более месяцев
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (нефиксированное) 
-								li.your-coworking__item-listitem Без предоставления юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price 18000 
-								.your-coworking__item-footer-rub руб. / мес.
+							ul
+								li НДС 18%
+								li Одно рабочее место (нефиксированное) 
+								li Без предоставления юридического адреса
+							div
+								div 18000 
+								div руб. / мес.
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span От 1-го до 2-x месяцев
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (нефиксированное) 
-								li.your-coworking__item-listitem Без предоставления юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price 20000 
-								.your-coworking__item-footer-rub руб. / мес.
+							ul 
+								li НДС 18%
+								li Одно рабочее место (нефиксированное) 
+								li Без предоставления юридического адреса
+							div 
+								div 20000 
+								div руб. / мес.
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span 7 дней
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (нефиксированное) 
-								li.your-coworking__item-listitem Без предоставления юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price 6000  
-								.your-coworking__item-footer-rub руб. / нед.
+							ul 
+								li НДС 18%
+								li Одно рабочее место (нефиксированное) 
+								li Без предоставления юридического адреса
+							div 
+								div 6000  
+								div руб. / нед.
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span 1 день
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (нефиксированное) 
-								li.your-coworking__item-listitem Без предоставления юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price 1000 
-								.your-coworking__item-footer-rub руб. / день
+							ul 
+								li НДС 18%
+								li Одно рабочее место (нефиксированное) 
+								li Без предоставления юридического адреса
+							div 
+								div 1000 
+								div руб. / день
 
 			//для участников и соискателей проекта «Сколково»
 			#id-3.your-coworking__item-wrap 
 				.row
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span От 3-х и более месяцев
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (фиксированное) 
-								li.your-coworking__item-listitem С предоставлением юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price 18000 
-								.your-coworking__item-footer-rub руб. / мес.
+							ul 
+								li НДС 18%
+								li Одно рабочее место (фиксированное) 
+								li С предоставлением юридического адреса
+							div 
+								div 18000 
+								div руб. / мес.
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span От 1-го до 2-x месяцев
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (фиксированное) 
-								li.your-coworking__item-listitem С предоставлением юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price 18000  
-								.your-coworking__item-footer-rub руб. / мес.
+							ul 
+								li НДС 18%
+								li Одно рабочее место (фиксированное) 
+								li С предоставлением юридического адреса
+							div 
+								div 18000  
+								div руб. / мес.
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span 7 дней
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (фиксированное) 
-								li.your-coworking__item-listitem С предоставлением юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price —  
-								//- .your-coworking__item-footer-rub руб. / нед.
+							ul 
+								li НДС 18%
+								li Одно рабочее место (фиксированное) 
+								li С предоставлением юридического адреса
+							div 
+								div —  
+								//- div руб. / нед.
 					.col-lg-3.col-md-6
-						a(href="#", data-toggle="modal", data-target="#modal_coworking").your-coworking__item
-							.your-coworking__item-header 
+						a(href="#", data-toggle="modal", data-target="#modal_coworking")
+							div 
 								span 1 день
-							ul.your-coworking__item-list 
-								li.your-coworking__item-listitem НДС 18%
-								li.your-coworking__item-listitem Одно рабочее место (фиксированное) 
-								li.your-coworking__item-listitem С предоставлением юридического адреса
-							.your-coworking__item-footer 
-								.your-coworking__item-footer-price — 
-								//- .your-coworking__item-footer-rub руб. / день
+							ul 
+								li НДС 18%
+								li Одно рабочее место (фиксированное) 
+								li С предоставлением юридического адреса
+							div 
+								div — 
+								//- div руб. / день
 

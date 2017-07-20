@@ -4,18 +4,19 @@ section
 			.slider-main__elem
 				.container.w90
 					.slider-main__elem-bg(style="background-image:url(img/slider.jpg)")
-					.slider-main__container
+					.slider-main__container.slider-main__container_title-left
 						.slider-main__logo
 							img(src="img/logo_2.png", alt='logo').slider-main__logo-img
 						h1 Коворкинг в Технопарке <br>Ваш первый шаг в Сколково
 						.slider-main__btn-block
 							a(href="#", data-toggle="modal", data-target="#modal_resident").btn.btn_green Стать резидентом
-							a(href="#").btn.btn_green Посетить экскурсию 
+							a(href="#", data-toggle="modal", data-target="#modal_excursion").btn.btn_green Посетить экскурсию 
 			.slider-main__elem.slider-main__elem_2
 				.container
 					.slider-main__elem-bg(style="background-image:url(img/technopark.png)")
 					.slider-main__container
-						p.technopark__text Посетите <span>самый большой в Восточной Европе</span>
+						div.technopark__text
+							p Посетите <span class="yellow">самый большой в Восточной Европе</span>
 						h1 Технопарк Сколково
 						.container
 							.row.technopark__tiles
